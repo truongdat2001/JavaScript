@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy ảnh cũ Hà Nội</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/313903289_5668318836555332_3651542979128551759_n.jpg?stp=dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=l4AdrlnZn1kAX-adYaW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRgTKqNG-SwRMDLyph9GhjcYgjdp19wZq9sQLInx5MNPQ&oe=63AA7143" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="play()">
+    <div class="main" >
+        <div id="main">
+            <div class="header">
+                <div class="navnav">
+                    <div class="nav">
+                        <div class="logo">
+                            <div class="img">
+                                <a href="index.html">
+                                    <img height="70px" width="300px" src="imgs/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="timkiem">
+                            <form action="" class="search" method="post"></form>
+                            <input type="text" class="nhap" placeholder="Bạn muốn tìm gì?">
+                            <button type="submit" class="searchButton">
+                                <img src="imgs/kinhlup.png" alt="" height="15px">
+                            </button>
+                        </div>
+                        <div class="jion">
+                            <a href="index.html">Trang chủ</a>
+                            <a href="sanPham.html">Sản phẩm</a>
+                        </div>
+                        
+                        <div class="jion">
+                            
+                            <div class="">
+                                <a href="dangNhap.html">Đăng nhập / Đăng ký</a>
+                                <a href="sanPham.html">
+                                <i class="fa fa-shopping-bag" aria-hidden="true">
+                                    <span>0</span>
+                                </i>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="khoangTrang"></div>
+
+                <div class="slide">
+                    <img  src="imgs/anh0.png" id="slide" alt="">
+                    <button id="prev" onclick="prev()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button id="next" onclick="next()"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    <div class="btn">
+                        <span class="dot" onclick="hinh1()"></span>
+                        <span class="dot" onclick="hinh2()"></span>
+                        <span class="dot" onclick="hinh3()"></span>
+                        <span class="dot" onclick="hinh4()"></span>
+                        <span class="dot" onclick="hinh5()"></span>
+                    </div>
+                </div>
+                <div id="gioHang">
+                    
+                </div>
+            </div>
+            <div class="content">
+                
+            </div>
+            <div class="footer">
+                <div class="info">
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                        <hr> 
+                        <h4>CỬA HÀNG MÁY ẢNH CŨ HÀ NỘI</h4>
+                        
+                    </div>
+                    
+                    <h5>Hotline: <span>0919 339 891</span></h5>
+                    <h5>Địa chỉ: <span>Số 53, ngõ 12, Phan Đình Giót, Phương Liệt, Thanh Xuân, TP Hà Nội</span></h5>
+                    <h5>Email: <span>mayanhcuhn@gmail.com</span></h5>
+                    <div class="icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="">
+                        <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="ifam" style="padding-top:30px ;  ">
+                    <h4>BẢN ĐỒ: </h4>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.017717349715!2d105.8398892!3d20.991926899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                        1s0x3135ac65efbab34d%3A0xfca68a99cbefd12!2zNTMgTmcuIDEyIFAuIFBoYW4gxJDDrG5oIEdpw7N0LCBQaMawxqFuZyBMaeG7h3QsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1680923727935!5m2!1svi!2s" 
+                        width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

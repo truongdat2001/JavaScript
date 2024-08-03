@@ -1,0 +1,76 @@
+
+.form-main{
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+.form-main .form{
+    width:70%;
+    background-color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,+0%);
+}
+.form-main .form>div{
+    width: 70%;
+    margin: 0 auto;
+}
+.form-main .form h2{
+    padding: 15px 0;
+    text-align: center;
+}
+.form-main .form .field{
+    padding: 10px 0;
+    width: 100%;
+}
+.form-main .field label{
+    color: red;
+    font-size: 14px;
+}
+
+.form-main .form .contror{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid rgba(141, 139, 139, 0.342);
+    outline:  green;
+}
+
+.form-main .form .contror:forcus{
+    box-shadow: 0 0 5px blue;
+    
+}
+.form-main .form p{
+    padding: 10px 0 ;
+}
+.form-main .form .field div{
+    padding: 10px 0;
+}
+.form-main .form .field span{
+    padding-left:10px ;
+}
+.form-main .form .btn{
+    margin:  0 auto;
+    width: 300px;
+}
+.form-main .form .submit{
+    padding: 10px 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(80, 133, 238);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 0 5px grey;
+}
+.form-main .form .submit:hover{
+    background-color: rgb(80, 238, 138);
+
+}

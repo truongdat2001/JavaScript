@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy ảnh cũ Hà Nội</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/313903289_5668318836555332_3651542979128551759_n.jpg?stp=dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=l4AdrlnZn1kAX-adYaW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRgTKqNG-SwRMDLyph9GhjcYgjdp19wZq9sQLInx5MNPQ&oe=63AA7143" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="gioHang.css">
+</head>
+<body onload="play()">
+    <div class="main" >
+        <div id="main">
+            <div class="header">
+                <div class="navnav">
+                    <div class="nav">
+                        <div class="logo">
+                            <div class="img">
+                                <a href="index.html">
+                                    <img height="70px" width="300px" src="imgs/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="timkiem">
+                            <form action="" class="search" method="post"></form>
+                            <input type="text" class="nhap" placeholder="Bạn muốn tìm gì?">
+                            <button type="submit" class="searchButton">
+                                <img src="imgs/kinhlup.png" alt="" height="15px">
+                            </button>
+                        </div>
+                        <div class="jion">
+                            <a href="index.html">Trang chủ</a>
+                            <a href="sanPham.html">Sản phẩm</a>
+                        </div>
+                        
+                        <div class="jion">
+                            
+                            <div class="">
+                                <a href="dangNhap.html">Đăng nhập / Đăng ký</a>
+                                <a href="#" onclick="gioHang()"> 
+                                <i class="fa fa-shopping-bag" aria-hidden="true">
+                                    <span id="soDonHang">0</span>
+                                </i>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="khoangTrang"></div>
+
+                <div class="content" id="content">
+                    <div class="menu-wapee">
+                        <div class="subheader">
+                            <strong><i class="fa fa-bars" aria-hidden="true"></i>DANH MỤC SẢN PHẨM</strong>
+                        </div>
+                        <div class="navation">
+                            <ul class="listGroup">
+                                <li class="item" id="chon">Máy Ảnh</li>
+                                <li class="item">Ống Kính</li>
+                                <li class="item">Phụ Kiện</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div id="canon" style="display: block;"  class="section">
+                        <div class="menuPhu">
+                            <ul>
+                                <li class="blue" >Canon</li>
+                                <li onclick="sony()">Sony</li>
+                                <li>Fujifilm</li>
+                                <li>Nikon</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="box" id="box1" onmouseover="hover1('iconSP1','anh1SP1','anh2SP1')" onmouseout="unHover1('iconSP1','anh1SP1','anh2SP1')">
+                                <div class="img">
+                                    <img id="anh1SP1" style="display: block;" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/m502-1.jpg?v=1679562253927" alt="">
+                                    <img id="anh2SP1" style="display: none;" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/m502-3.jpg?v=1679562256207" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS M50 Mark II
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">14.000.000₫ 
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia"><p>10%</p>  </div> -->
+                                <div></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP1" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="box1" onmouseover="hover1('iconSP2','anh1SP2','anh2SP2')" onmouseout="unHover1('iconSP2','anh1SP2','anh2SP2')">
+                                <div class="img">
+                                    <img id="anh1SP2" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/b5bcc869-9050-4c6a-b5b0-66b9e7a41d2c.jpg?v=1679542548340" alt="">
+                                    <img id="anh2SP2" style="display: none;" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/9f210f0e-a22e-4b84-a58c-07c66e20d351.jpg?v=1679542549240" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 850D (body)
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">18.000.000₫
+                                        <!-- <del class="giam">1.090.000₫</del> -->
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>20%</p>
+                                </div> -->
+                                <div></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP2" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+    
+                            <div class="box" id="box1" onmouseover="hover1('iconSP3','anh1SP3','anh2SP3')" onmouseout="unHover1('iconSP3','anh1SP3','anh2SP3')">
+                                <div class="img">
+                                    <img id="anh1SP3" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/8cfefb0a-b85b-4172-93d1-04b03f50ad08.jpg?v=1679543322547" alt="">
+                                    <img id="anh2SP3" style="display: none;" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/f5a55e3a-d1c6-483c-aa5b-6349f7158521.jpg?v=1679543325953" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS M5
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">11.000.000₫
+                                        <!-- <del class="giam">1.290.000₫</del> -->
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>20%</p>
+                                </div> -->
+                                <div class=""></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP3" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="box1" onmouseover="hover1('iconSP4','anh1SP4','anh2SP4')" onmouseout="unHover1('iconSP4','anh1SP4','anh2SP4')">
+                                <div class="img">
+                                    <img id="anh1SP4" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/r-1.jpg?v=1679562388780" alt="">
+                                    <img id="anh2SP4" src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/r-4.jpg?v=1679562396563" alt="" style="display: none;" >
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS R (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">31.000.000₫
+                                        <!-- <del class="giam">990.000₫</del> -->
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>30%</p>
+                                </div> -->
+                                <div class=""></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP4" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="box" onmouseover="hover1('iconSP5','anh1SP5','anh2SP5')" onmouseout="unHover1('iconSP5','anh1SP5','anh2SP5')">
+                                <div class="img">
+                                    <img id="anh1SP5" 
+                                    src="https://bizweb.dktcdn.net/thumb/large/100/378/894/products/d8512dff-73e5-41af-9599-730124d6988d.jpg?v=1679539893890"
+                                     alt="">
+                                    <img id="anh2SP5"  
+                                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/da96981c-65d9-4843-8a97-41d808b66bbb.jpg?v=1679539895887"
+                                     style="display: none;" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 5D Mark II
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">8.000.000₫</p>
+                                </div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div class=""></div>
+                                <div >
+                                    <i id="iconSP5" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="box1" onmouseover="hover1('iconSP6','anh1SP6','anh2SP6')" onmouseout="unHover1('iconSP6','anh1SP6','anh2SP6')">
+                                <div class="img">
+                                    <img id="anh1SP6" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/63185270-2949-4a91-a69e-6e145d2f4054.jpg?v=1679539980530" alt="">
+                                    <img id="anh2SP6"  src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/cbd8464c-54bc-4ad5-9b43-5b4c844e4016.jpg?v=1679539986647" style="display: none;" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 5D Mark III
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">20.000.000₫
+                                        <!-- <del class="giam">179.000₫</del> -->
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>30%</p>
+                                </div> -->
+                                <div class=""></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP6" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+    
+                            <div class="box" id="box1" onmouseover="hover1('iconSP7','anh1SP7','anh2SP7')" onmouseout="unHover1('iconSP7','anh1SP7','anh2SP7')">
+                                <div class="img">
+                                    <img id="anh1SP7" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/1c182f0e-a831-45ab-bb12-4d18cdac59e0.jpg?v=1679541573223" alt="">
+                                    <img id="anh2SP7"  src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/294df9ce-11cb-46ef-ac00-b25762f52645.jpg?v=1679541574197" style="display: none;" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 550D (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">4.000.000₫</p>
+                                </div>
+                                <div></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP7" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="box1" onmouseover="hover1('iconSP8','anh1SP8','anh2SP8')" onmouseout="unHover1('iconSP8','anh1SP8','anh2SP8')">
+                                <div class="img">
+                                    <img id="anh1SP8" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/19e9c69d-3b06-4c5b-9db3-163c201b4b8b.jpg?v=1679542378717" alt="">
+                                    <img id="anh2SP8" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/56322b9d-3a6a-4be7-9ec6-b65a1e9de014.jpg?v=1679542382740" alt="" style="display: none;" >
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 760D (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">10.500.000₫
+                                        <!-- <del class="giam">990.000₫</del> -->
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>20%</p>
+                                </div> -->
+                                <div class=""></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP8" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="box" onmouseover="hover1('iconSP9','anh1SP9','anh2SP9')" onmouseout="unHover1('iconSP9','anh1SP9','anh2SP9')">
+                                <div class="img">
+                                    <img id="anh1SP9" 
+                                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/4b1b4b41-c276-434f-87ba-5e56803232ae.jpg?v=1679540405443"
+                                     alt="">
+                                    <img id="anh2SP9"  
+                                    src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/9ca970c8-5efc-405c-9808-48914f64fd29.jpg?v=1679540406673"
+                                     style="display: none;" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 6D Mark II 
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">25.000.000₫</p>
+                                </div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div class=""></div>
+                                <div >
+                                    <i id="iconSP9" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="box1" onmouseover="hover1('iconSP10','anh1SP10','anh2SP10')" onmouseout="unHover1('iconSP10','anh1SP10','anh2SP10')">
+                                <div class="img">
+                                    <img id="anh1SP10" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/01e52de3-72e6-463b-9144-f44aa0252c99.jpg?v=1679542324173" alt="">
+                                    <img id="anh2SP10"  src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/14f949c4-3f04-4af6-9893-63c28c288911.jpg?v=1679542326497" style="display: none;" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 750D (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">7.800.000₫</p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>30%</p>
+                                </div> -->
+                                <div class=""></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP10" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+    
+                            <div class="box" id="box1" onmouseover="hover1('iconSP11','anh1SP11','anh2SP11')" onmouseout="unHover1('iconSP11','anh1SP11','anh2SP11')">
+                                <div class="img">
+                                    <img id="anh1SP11" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/332e42e6-d870-4744-80c6-e973a5180d5b.jpg?v=1679540808457" alt="">
+                                    <img id="anh2SP11"  src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/d9ae102c-b803-4b92-a420-f62f076f222e.jpg?v=1679540813040" style="display: none;" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 60D (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">6.000.000₫</p>
+                                </div>
+                                <div></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP11" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="box" id="box1" onmouseover="hover1('iconSP12','anh1SP12','anh2SP12')" onmouseout="unHover1('iconSP12','anh1SP12','anh2SP12')">
+                                <div class="img">
+                                    <img id="anh1SP12" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/f0064ef1-4544-408a-a659-e7ab1bc0b4a6.jpg?v=1679541461137" alt="">
+                                    <img id="anh2SP12" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/df38a875-ec1a-4bb2-ba79-5038e0ea335f.jpg?v=1679541462283" alt="" style="display: none;" >
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Canon EOS 500D (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">2.500.000₫
+                                        <!-- <del class="giam">229.000₫</del> -->
+                                    </p>
+                                </div>
+                                <!-- <div class="giamGia">
+                                    <p>30%</p>
+                                </div> -->
+                                <div class=""></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP12" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div id="sony" style="display: none;" class="section">
+                        <div class="menuPhu">
+                            <ul>
+                                <li  onclick="canon()">Canon</li>
+                                <li class="blue" >Sony</li>
+                                <li>Fujifilm</li>
+                                <li>Nikon</li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="box" id="box1" onmouseover="hover1('iconSP13','anh1SP13','anh2SP13')" onmouseout="unHover1('iconSP13','anh1SP13','anh2SP13')">
+                                <div class="img">
+                                    <img id="anh1SP13" style="display: block;" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/img-9092.jpg?v=1678784994913" alt="">
+                                    <img id="anh2SP13" style="display: none;" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/img-9095.jpg?v=1678784994913" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Sony A7 mark III (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">33.000.000₫</p>
+                                </div>
+                                <div></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP13" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+    
+                            <div class="box" id="box1" onmouseover="hover1('iconSP14','anh1SP14','anh2SP14')" onmouseout="unHover1('iconSP14','anh1SP14','anh2SP14')">
+                                <div class="img">
+                                    <img id="anh1SP14" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/a6400.jpg?v=1678784910423" alt="">
+                                    <img id="anh2SP14" style="display: none;" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/378/894/products/img-9713-copy-7823c3bb-49b0-40dc-837c-e82e25c559f6.jpg?v=1678784910423" alt="">
+                                </div>
+                                <div class="tenSP">
+                                    <h4>
+                                        Sony A6400 (Body)
+                                    </h4>
+                                </div>
+                                <div class="donGia">
+                                    <p class="gia">19.450.000₫</p>
+                                </div>
+                                <div></div>
+                                <div class="them" onclick="them(this)">
+                                    <span ><i class="fa fa-shopping-basket" aria-hidden="true"></i>Thêm vào giỏ hàng</span>
+                                </div>
+                                <div >
+                                    <i id="iconSP14" onclick="hienThiSP(this)" class="fa fa-eye" style="display: none;" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="gioHang" id="gioHang" >
+                    <div class="gioHangCuaBan">
+                        <div class="header-gioHang">
+                            <h2 class="in">GIỎ HÀNG CỦA BẠN</h2>
+                            <p class="in"><span id="soDonHang-gioHang">0 </span> SẢN PHẨM</p>
+                        </div>
+                        <div class="thongTinDonHang" id="thongTinDonHang">
+
+                        </div>
+                    </div>
+                    <div class="thongTinHoaDon">
+                        <p style="font-weight: bold;font-size: 18px;">THÔNG TIN ĐƠN HÀNG</p>
+                        <p style="padding: 10px 0;">Tổng tiền: <span id="tongSoTien"></span><span> VND</span></p>
+                        <hr>
+                        <p style="padding: 10px 0;"> 
+                            - Thời gian giao hàng trong vòng 2 ngày trong tỉnh. Ngoài tỉnh dự kiến từ 4-7 ngày.
+                        </p>
+                        <p style="padding: 10px 0;">
+                            - Vui lòng COD trước 40%.
+                        </p>
+                        <p style="padding: 10px 0;">Ghi chú đơn hàng: </p>
+                        <textarea name="" id="" cols="43" rows="7"></textarea>
+                        <div class="btn">
+                            <button onclick="thanhToan()">THANH TOÁN</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-main" id="form-main" style="display: none;">
+                    <div class="form">
+                        <div class="">
+                            <h2>Thông tin đơn hàng</h2>
+                            <form action="hoangThanhDon.html" name="myForm" onsubmit="return validation()" method="get" >
+                                <div class="field">
+                                    <label id="checkName" ></label>
+                                    <input id="name" name="name" class="contror" type="text" placeholder="Họ và tên">
+                                </div> 
+                                <div class="field">
+                                    <label id="checkEmail" ></label>
+                                    <input id="email" class="contror" type="text" placeholder="Email">
+                                </div>
+                                <div class="field">
+                                    <label id="checkContact" ></label>
+                                    <input  id="contact"  class="contror" type="text"  placeholder="Số điện thoại">
+                                </div>
+                                <div class="field">
+                                    <label id="checkAddress" ></label>
+                                    <input id="address" class="contror" type="text" placeholder="Địa chỉ">
+                                </div>
+                                <div class="field" id="radio">
+                                    <label id="checkRadio" ></label>
+                                    <p>Hình thức thanh toán</p>
+                                    <div class="">
+                                        <input class="check" type="radio" name="check" value="chuyenKhoan" onclick="chuyenKhoan()"> <span>Chuyển khoản</span>
+                                    </div>
+                                    <div class="">
+                                        <input  class="check" type="radio" name="check" value="tienMat"> <span>Tiền mặt</span>
+                                    </div>
+                                </div>
+                                <div class="btn" >
+                                    <input type="submit" class="submit"  value="Đặt hàng"></input>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="sidebar">
+                        <div id="sidebar-main">
+
+                        </div>
+                        <hr>
+                        <div class="order">
+                            <p>
+                                Tổng cộng:
+                            </p>
+                            <p><span id="soTien-ThanhToan"></span ><span> VND</span></p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer" style="clear: both;">
+                <div class="info">
+                    <div class="logo">
+                        <img src="imgs/logo.png" alt="">
+                        <hr> 
+                        <h4>CỬA HÀNG MÁY ẢNH CŨ HÀ NỘI</h4>
+                        
+                    </div>
+                    
+                    <h5>Hotline: <span>0919 339 891</span></h5>
+                    <h5>Địa chỉ: <span>Số 53, ngõ 12, Phan Đình Giót, Phương Liệt, Thanh Xuân, TP Hà Nội</span></h5>
+                    <h5>Email: <span>mayanhcuhn@gmail.com</span></h5>
+                    <div class="icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png" alt="">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="">
+                        <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="ifam" style="padding-top:30px ;  ">
+                    <h4>BẢN ĐỒ: </h4>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.017717349715!2d105.8398892!3d20.991926899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                        1s0x3135ac65efbab34d%3A0xfca68a99cbefd12!2zNTMgTmcuIDEyIFAuIFBoYW4gxJDDrG5oIEdpw7N0LCBQaMawxqFuZyBMaeG7h3QsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1680923727935!5m2!1svi!2s" 
+                        width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hiện thông tin SP -->
+        <div id="thongTinSP">
+            <div class="thongTinSanPham" >
+                <div class="img">
+                    <img id="hinhSP" alt="">
+                    <div class="hinhPhu">
+                        <img id="hinh1" onclick="chuyenHinh1()" src="" alt="">
+                        <img id="hinh2" onclick="chuyenHinh2()" src="" alt="">
+                    </div>
+                </div>
+                <div class="thongTin">
+                    <h3 id="tenSP"> </h3>
+                    <p id="giaSP" class="gia"></p>
+                    <hr>
+                    <br>
+                    
+                    <ul>
+                        <li> <p class="chatLieu">Cảm biến APS-C CMOS 24.1 megapixels</p> </li>        
+                        <li> <p class="chatLieu">Bộ xử lý hình ảnh DIGIC 8</p> </li>
+                        <li> <p class="chatLieu">Lấy nét Dual Pixel CMOS AF với Eye Detect AF</p> </li>
+                    </ul>
+
+                    <h4 class="them">Thêm vào giỏ hàng</h4>
+                    <a href="dangNhap.html"><h4 class="them">Mua ngay</h4></a>
+                </div>
+                <div class="close" onclick="tatSP()">x</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

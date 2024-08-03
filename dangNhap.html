@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon"
+        href="https://scontent.xx.fbcdn.net/v/t1.15752-9/313903289_5668318836555332_3651542979128551759_n.jpg?stp=dst-jpg_p206x206&_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=l4AdrlnZn1kAX-adYaW&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRgTKqNG-SwRMDLyph9GhjcYgjdp19wZq9sQLInx5MNPQ&oe=63AA7143"
+        type="image/x-icon" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dangKy.css">
+    <script src="main.js"></script>
+</head>
+
+<body onload="hienThiTrang()">
+    <div class="header">
+        <div class="navnav">
+            <div class="nav">
+                <div class="logo">
+                    <div class="img">
+                        <a href="index.html">
+                            <img src="imgs/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="asdasd">
+            <!-- <img class="anhCuaDangNhap" src="./imgs/banner-thoi-trang-don-gian-dep_113856694.jpg" alt="">  -->
+
+            <div id="bangDangNhap" class="bangDangNhap">
+
+                <form action="index.html" onsubmit="return login()">
+                    <h2>Chào bạn! Hãy đăng nhập để tiếp tục!</h2>
+                    <div class="thongTin">
+                        <div class="input">
+                            <input id="useName" onkeypress="nhapUse()" onkeydown="nhapUse()" onkeyup="nhapUse()"
+                                type="text" value="" placeholder="Tên đăng nhập" name="useName">
+                            <p class="test" id="checkUseName"></p>
+                        </div>
+                        <div class="input">
+                            <input onkeypress="nhapPass()" onkeydown="nhapPass()" onkeyup="nhapPass()" id="password"
+                                type="password" value="" placeholder="Mật khẩu" name="password">
+                            <p class="test" id="checkPass"></p>
+                        </div>
+                    </div>
+                    <div class="bnt">
+                        <button>Đăng nhập</button>
+                    </div>
+                    <p id="nhapSai"></p>
+
+                    <p class="dangKy">Bạn chưa có mật khẩu? <a onclick="hienDangKy()"
+                            style="color: blue; cursor: pointer;">Đăng ký ngay</a></p>
+                </form>
+                <div id="trangThai"></div>
+            </div>
+            <div class="khoangTrang"></div>
+
+            <div id="dangKy" style="display: none;">
+                <div class="form-main" id="form-main">
+                    <div class="form">
+                        <div class="">
+                            <h2>ĐĂNG KÝ</h2>
+                            <form action="index.html" name="myForm" onsubmit="return validationForm2()" method="get">
+                                <div class="field">
+                                    <label id="checkName"></label>
+                                    <input id="name" name="name" class="contror" type="text" placeholder="Họ và tên">
+                                </div>
+                                <div class="field">
+                                    <label id="checkUse"></label>
+                                    <input id="use" class="contror" type="text" placeholder="Tên đăng nhập">
+                                </div>
+                                <div class="field">
+                                    <label id="checkPassDK"></label>
+                                    <input id="pass" class="contror" type="password" placeholder="Mật khẩu">
+                                </div>
+                                <div class="field">
+                                    <label id="checkNewPass"></label>
+                                    <input id="newPass" class="contror" type="password" placeholder="Nhập lại mật khẩu">
+                                </div>
+                                <div class="field">
+                                    <label id="checkEmail"></label>
+                                    <input id="email" class="contror" type="text" placeholder="Email">
+                                </div>
+                                <div class="field">
+                                    <label id="checkContact"></label>
+                                    <input id="contact" class="contror" type="text" placeholder="Số điện thoại">
+                                </div>
+                                <div class="btn">
+                                    <input type="submit" class="submit" value="Đăng kí"></input>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="clear: both;">
+        <div class="info">
+            <div class="logo">
+                <img src="imgs/logo.png" alt="">
+                <hr>
+                <h4>CỬA HÀNG MÁY ẢNH CŨ HÀ NỘI</h4>
+
+            </div>
+
+            <h5>Hotline: <span>0919 339 891</span></h5>
+            <h5>Địa chỉ: <span>Số 53, ngõ 12, Phan Đình Giót, Phương Liệt, Thanh Xuân, TP Hà Nội</span></h5>
+            <h5>Email: <span>mayanhcuhn@gmail.com</span></h5>
+            <div class="icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+                    alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
+                    alt="">
+                <img src="https://classic.vn/wp-content/uploads/2022/07/zalo-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="ifam" style="padding-top:30px ;  ">
+            <h4>BẢN ĐỒ: </h4>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.017717349715!2d105.8398892!3d20.991926899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                1s0x3135ac65efbab34d%3A0xfca68a99cbefd12!2zNTMgTmcuIDEyIFAuIFBoYW4gxJDDrG5oIEdpw7N0LCBQaMawxqFuZyBMaeG7h3QsIFRoYW5oIFh1w6JuLCBIw6AgTuG7mWk!5e0!3m2!1svi!2s!4v1680923727935!5m2!1svi!2s"
+                width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>
